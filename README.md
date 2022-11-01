@@ -13,6 +13,11 @@ Link: https://github.com/jonathan-lee8/react-portfolio
 
 To allow users to view and connect with the creator. To showcase previous work.
 
+`NPM start`
+`NPM test`
+`NPM run build`
+`NPM run eject`
+
 ## Technology
 
 - JavaScript
