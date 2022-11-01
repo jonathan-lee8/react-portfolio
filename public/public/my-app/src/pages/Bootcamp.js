@@ -1,19 +1,22 @@
 import React from 'react';
-import ProjectList from '../components/ProjectList';
+import ProjectItem from '../components/ProjectItem';
 import '../styles/Bootcamp.css';
+import { projectList } from '../helpers/ProjectList';
 
-import Proj1 from '../assets/proj1.png'
+// import Proj1 from '../assets/project1.png';
+// import Proj2 from '../assets/proj2.png';
 
 function Bootcamp() {
   return (
     <div className='bootcamp'>
       <h1>Bootcamp Projects</h1>
       <div className='bootcampList'>
-        <ProjectList name="Top Artist Finder API" image={Proj1}/>
-        <ProjectList />
+          {projectList.map((project) => (
+            <ProjectItem name={project.name} image = {project.image} link={project.link} />
+          ))}
       </div>
     </div>
   )
 }
 
-export default Bootcamp
+export default Bootcamp;
